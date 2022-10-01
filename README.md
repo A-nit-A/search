@@ -1,5 +1,6 @@
 # search
-web50/projects/2020/x/search
 
-A google search wrapper
+Design a front-end for Google Search, Google Image Search, and Google Advanced Search.
+
+web50/projects/2020/x/search
 
