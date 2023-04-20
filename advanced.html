@@ -17,8 +17,8 @@
 
 <body>
 
-<!-- Navbar -->
-    <div id="nav_bar" class="container">
+    <!-- Navbar -->
+    <div id="nav_bar_avd" class="container">
         <div class="row">
             <div class="col-10">
                 <a class="navabout" data-toggle="tooltip" data-placement="bottom"
@@ -31,13 +31,51 @@
             </div>
         </div>
     </div>
+    <div>
+        <p id="AvdSrchTitle">
+            Advanced Search
+        </p>
+    </div>
+    <hr>
+    <div id="SrchForm">
+        <form action="https://google.com/search">
 
-<hr>
-    <form action="https://google.com/search">
+            <div id="FieldsTitles" class="row">
+                <div class="col-2 FieldName" id="FieldsTitles">
+                    <p>Find pages with..</p>
+                </div>
 
-    </form>
+                <div class="col-6 FieldTextInput"> &nbsp </div>
 
+                <div class="col-3 FieldHelp" id="FieldsTitlesHelp">
+                    <p>To do this in the search box.</p>
+                </div>
+            </div>
+
+            <div id="Field_1" class="row">
+                <div class="col-2 FieldName">
+                    <P>all these words:</P>
+                </div>
+                <div class="col-6 FieldTextInput">
+                    <input id="Field_Input_1" class="FieldTextInput" value="" autofocus="autofocus" name="as_q"
+                        type="text">
+                </div>
+                <div class="col-3 FieldHelp">
+                    <p>Type the important words: </p>
+                </div>
+            </div>
+
+            <div class="HorLine">
+
+            </div>
+            <div>
+                <input id="BtnSearch" class="row" value="Advanced Search" type="submit">
+            </div>
+            <div class="HorLine">
+
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
-
