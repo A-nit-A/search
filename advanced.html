@@ -39,42 +39,70 @@
     <hr>
     <div id="SrchForm">
         <form action="https://google.com/search">
+            <div class="form-group row">
+                <label for="FieldsTitlesHelp" class="col-sm-2 col-form-label">Find pages with..</label>
+                <div class="col-sm-6">
 
-            <div id="FieldsTitles" class="row">
-                <div class="col-2 FieldName" id="FieldsTitles">
-                    <p>Find pages with..</p>
                 </div>
-
-                <div class="col-6 FieldTextInput"> &nbsp </div>
-
-                <div class="col-3 FieldHelp" id="FieldsTitlesHelp">
-                    <p>To do this in the search box.</p>
-                </div>
+                <p class="col-sm-2 col-form-label">To do this in the search box.</p>
             </div>
-
-            <div id="Field_1" class="row">
-                <div class="col-2 FieldName">
-                    <P>all these words:</P>
-                </div>
-                <div class="col-6 FieldTextInput">
+            <!-- all these words: -->
+            <div class="form-group row">
+                <label for="Field_Input_1" class="col-sm-2 col-form-label">all these words:</label>
+                <div class="col-sm-5 FieldTextInput">
                     <input id="Field_Input_1" class="FieldTextInput" value="" autofocus="autofocus" name="as_q"
                         type="text">
                 </div>
-                <div class="col-3 FieldHelp">
-                    <p>Type the important words: </p>
+                <div class="col-sm-4 col-form-label FieldHelp">
+                    <p>Type the important words: tri-colour rat terrier </p>
+                </div>
+            </div>
+            <!-- this exact word or phrase: -->
+            <div class="form-group row">
+                <label for="Field_Input_2" class="col-sm-2 col-form-label">this exact word or phrase:</label>
+                <div class="col-sm-5 FieldTextInput">
+                    <input id="Field_Input_2" class="FieldTextInput" value="" name="as_epq"
+                        type="text">
+                </div>
+                <div class="col-sm-4 col-form-label FieldHelp">
+                    <p>Put exact words in quotes: "rat terrier" </p>
+                </div>
+            </div>
+            <!-- any of these words: -->
+            <div class="form-group row">
+                <label for="Field_Input_3" class="col-sm-2 col-form-label">any of these words:</label>
+                <div class="col-sm-5 FieldTextInput">
+                    <input id="Field_Input_3" class="FieldTextInput" value="" name="as_oq"
+                        type="text">
+                </div>
+                <div class="col-sm-4 col-form-label FieldHelp">
+                    <p>Type OR between all the words you want: miniature OR standard</p>
+                </div>
+            </div>
+            <!-- none of these words: -->
+            <div class="form-group row">
+                <label for="Field_Input_4" class="col-sm-2 col-form-label">none of these words:</label>
+                <div class="col-sm-5 FieldTextInput">
+                    <input id="Field_Input_4" class="FieldTextInput" value="" name="as_eq"
+                        type="text">
+                </div>
+                <div class="col-sm-4 col-form-label FieldHelp">
+                    <p>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell</p>
                 </div>
             </div>
 
-            <div class="HorLine">
+            <!-- horizontal line -->
+            <div class="HorLine col-10">
 
             </div>
-            <div>
-                <input id="BtnSearch" class="row" value="Advanced Search" type="submit">
-            </div>
-            <div class="HorLine">
 
+            <!-- search button -->
+            <div class="float-right">
+                <input id="BtnSearch" class="float-right" value="Advanced Search" type="submit">
             </div>
+
         </form>
+
     </div>
 </body>
 
